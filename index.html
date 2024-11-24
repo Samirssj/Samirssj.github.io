@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="imagenes e iconos/samir.jpeg" type="image/png">
+    <title>Portafolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-1">
+                <img src="imagenes e iconos/logo-Upla.png" alt="Logo UPLA" class="logo-upla">
+                <h2>UPLA</h2>
+            </div>
+            <div class="logo">
+                <h1 onclick="toggleDarkMode()">SAMIR</h1>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Programas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="login-sec">
+                <button>Login</button>
+            </div>
+        </nav>
+        <hr>
+        <div class="home-content">
+            <div class="home-container">
+                <h1>TALLER DE DESARROLLO DE APLICACIONES</h1>
+                <p>El curso de Taller de Aplicaciones está diseñado para desarrollar habilidades prácticas en la creación y gestión de proyectos tecnológicos. A lo largo del curso, los estudiantes adquieren conocimientos sobre herramientas y metodologías de desarrollo, desde la planificación y el diseño hasta la implementación y el mantenimiento de aplicaciones. Este enfoque permite aplicar conceptos teóricos en un entorno práctico, facilitando la construcción de aplicaciones funcionales que abordan problemas reales y mejoran la experiencia en el desarrollo de software.</p>
+                <button id="try-now">Ver Ahora</button>
+                <button id="explore">Explorar</button>
+            </div>
+        </div>
+    </header>
+    <hr class="section-divider">
+    <!--Acerca de mi-->
+    <section id="about-me">
+        <div class="about-container">
+            <img src="imagenes e iconos/Dan_kuso.jpg" alt="Avatar" class="about-img">
+            <div class="about-text">
+                <h2>ACERCA DE <span>MI</span></h2>
+                <p>Gracias por visitar mi sitio web y conocerme mejor. Espero que hayas disfrutado de la lectura de mis publicaciones del blog y que te hayan resultado útiles e informativas. Si quieres leer más publicaciones mías, suscríbete a mi boletín informativo, donde envío actualizaciones semanales sobre tendencias y consejos de desarrollo web. Si tienes algún comentario o sugerencia, házmelo saber. Me encantaría saber de ti.</p>
+                <!--<button>Leer Más</button>-->
+            </div>
+        </div>
+    </section>  
+    <hr class="section-divider">
+    <!--fin del Acerca de mi-->
+    <!--inicia la seccion de carrucel-->
+    <section class="carousel-section">
+        <h2><span class="highlight">PORYECTOS</span> Y ACTIVIDADES</h2>
+        <div class="carousel-container">
+            <button class="prev">&#10094;</button>
+            <div class="carousel-track">
+                <!-- Testimonio ejemplo 1 -->
+                <div class="carousel-item">
+                    <img src="imagenes e iconos/Armored.webp" alt="Imagen de Armored">
+                    <h3>Área y Perimetro de un Cuadrado Utilizando Lenguaje Java</h3>
+                    <p>El área de un cuadrado se calcula elevando la longitud de su lado al cuadrado ( A = l² ).</p>
+                    <button onclick="window.location.href='https://drive.google.com/drive/folders/11ZjTILn8Z5m56waX-R-JIY-shEOJxubY?usp=sharing'">Ver Proyecto</button>
+                </div>
+                <!-- Testimonio ejemplo 2 -->
+                <div class="carousel-item">
+                    <img src="imagenes e iconos/Dan_kuso.jpg" alt="Imagen de Dan_kuso">
+                    <h3>Calculo de la Pensión Utilizando Lenguaje Java</h3>
+                    <p>La Universidad efectúa rebajas en las pensiones a partir del segundo ciclobasandose en el promedio ponderado.</p>
+                    <button onclick="window.location.href='https://drive.google.com/drive/folders/1kFJy_lMhR4UgrjE-SyKJYGseWOGqu0wV?usp=sharing'">Ver Proyecto</button>
+                </div>
+                <!-- Añadir más testimonios según sea necesario -->
+                <div class="carousel-item">
+                    <img src="imagenes e iconos/Dan_kuso.jpg" alt="Imagen de Dan_kuso">
+                    <h3>CRUD en Java</h3>
+                    <p>Para realizar el ejercicio, crearemos primero una base de datos una tabla y registros y luego el CRUD en java.</p>
+                    <button onclick="window.location.href='https://drive.google.com/drive/folders/1j9x1WkpfBNTmIHXDo4vlU3Jkn4871IJe?usp=sharing'">Ver Proyecto</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes e iconos/Dan_kuso.jpg" alt="Imagen de Dan_kuso">
+                    <h3>Boleta de un Vendedor Utilizando Lenguaje Java</h3>
+                    <p>Diseñe un algoritmo que imprima la Boleta con el sueldo basico, la comisión, el sueldo bruto, el descuento y el sueldo neto.</p>
+                    <button onclick="window.location.href='https://drive.google.com/drive/folders/1gavTXzc7KJF36WPsOYd-GgwvFd5yUMeM?usp=sharing'">Ver Proyecto</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes e iconos/Dan_kuso.jpg" alt="Imagen de Dan_kuso">
+                    <h3>Gastos de la Empresa Utilizando Lenguaje Java</h3>
+                    <p>Diseñe un programa que determine cuánto gastará la Empresa en cada rubro.</p>
+                    <button onclick="window.location.href='https://drive.google.com/drive/folders/1rfDtqwFTIJC8JebcuSvCicSP--kBgiOy?usp=sharing'">Ver Proyecto</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes e iconos/Billy.webp" alt="Imagen de Billy">
+                    <h3>Login para 5 Estudiante Utilizando Lenguaje Java</h3>
+                    <p>Implementación de un Login para 5 estudiantes Utilizando Lenguaje Java y el Modelo de 3 capas con JSP, Servlet, Clases Java</p>
+                    <button onclick="navigateTo('ProyectosL.html')">Ver Proyecto</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes e iconos/Shinjiro Kuso.jpg" alt="Imagen de Shinjiro">
+                    <h3>Registro Alumno Utilizando Lenguaje Java</h3>
+                    <p>Desarrollar un Registro Alumnos Utilizando Lenguaje java y el Modelo de 3 capas con JSP, Servlet, Clases Java</p>
+                    <button onclick="navigateTo('RAlumno.html')">Ver Proyecto</button>
+                </div>
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>    
+    <!--fin de la seccion de carrucel-->
+    <hr class="section-divider">
+    <!--servicio/Programas-->
+    <section id="services">
+        <h2><span>PROGRAMAS</span></h2>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>JAVA NETBEANS Y JDK</h3>
+                <p>es un entorno de desarrollo integrado (IDE) para Java . NetBeans permite desarrollar aplicaciones a partir de un conjunto de componentes de software modulares llamados módulos.</p>
+                <p>El JDK es la implementación de la Máquina virtual de Java* que realmente ejecuta los programas de Java. Se trata de un paquete de software que puede utilizar para desarrollar aplicaciones basadas en Java.</p>
+                <button>Read More</button>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+                <h3>PHP MI ADMIN Y XAMPP</h3>
+                <p> Es una herramienta esencial para la gestión de bases de datos MySQL, facilitando tareas de administración y consultas SQL. No obstante, la calidad del hosting web y del servidor que elijas es crucial.</p>
+                <p>XAMPP es una compilación de software libre (similar a una distribución de Linux). Es gratuita y puede ser copiada libremente de acuerdo a la licencia GNU GPL. Únicamente la compilación de XAMPP está publicada bajo la licencia GPL.</p>
+                <button>Read More</button>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>VISUAL STUDIO CODE</h3>
+                <p>ES un editor de código fuente ultrarrápido , perfecto para el uso diario. Con compatibilidad con cientos de lenguajes, VS Code lo ayuda a ser productivo al instante con resaltado de sintaxis, coincidencia de corchetes, sangría automática, selección de cuadros, fragmentos de código y más.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </section>    
+    <!--fin de servicos/Programas-->
+    <hr> 
+    <footer>
+        <div class="contenedor-footer-redes">
+            <div class="footer-content">
+                <p>&copy; 2024 Rojas Tamara Samir Sabdiel</p>
+                <p>La elaboracion fue creado con recopilacion de proyectos antiguos</p>
+                <p>Elaboración Propia</p>                              
+            </div>
+            <div class="footer-content">
+                <p>Estudiante de la Universidad Peruana Los Andes</p>
+                <p>Correo Institucional: s00057h@ms.upla.edu.pe</p>  
+                <p>Correo Personal: samirrojas6042@gmail.com</p>                             
+            </div>
+            <div class="redes-sociales">                
+                <a href="https://github.com/Vaalerio" target="_blank" class="text-white">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>     
+</body>
+<script src="index.js"></script>
+</html>
