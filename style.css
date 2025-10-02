@@ -1,0 +1,441 @@
+<<<<<<< HEAD
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+header .logo { height: 50px; }
+header h1 { flex: 1; text-align: center; font-size: 1.2rem; color: #0040ff; }
+header nav ul { list-style: none; display: flex; gap: 15px; }
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+header nav ul li a:hover { background: #0040ff; color: #000; }
+
+/* Video */
+#video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#video-section video {
+  position: absolute;
+  top: 50%; left: 50%;
+  min-width: 100%; min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+#video-section .overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.5rem; font-weight: bold; color: #0040ff;
+  background: rgba(0,0,0,0.4);
+}
+
+/* Proyectos */
+#proyectos-section { padding: 50px; }
+#proyectos-section h2 {
+  text-align: center;
+  color: #0040ff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+.card:hover { transform: translateY(-5px); background: #222; }
+.card h3 { color: #fff; }
+.card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #0040ff;
+  color: #fff; border: none; border-radius: 6px;
+  cursor: pointer; transition: 0.3s;
+}
+.card button:hover { background: #0040ff; }
+
+/* Login */
+#login-section { display: flex; justify-content: center; align-items: center; height: 100vh; }
+.login-container {
+  background: #111;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+  width: 300px;
+}
+.login-container h2 { color: #0040ff; margin-bottom: 20px; }
+.login-container input {
+  width: 70%; padding: 12px; margin: 10px 0;
+  border-radius: 8px; border: none; background: #222; color: #fff;
+}
+.login-container button {
+  width: 70%; padding: 12px; border: none; border-radius: 8px;
+  background: #0040ff; color: #fff; cursor: pointer; transition: 0.3s;
+}
+.login-container button:hover { background: #0040ff; }
+
+/* Panel */
+#panel-section {
+  padding: 40px;
+  background: #111;
+  border-radius: 12px;
+  margin: 20px;
+}
+#panel-section h2 { text-align: center; color: #0040ff; margin-bottom: 20px; }
+#panel-section form {
+  display: flex; flex-direction: column; gap: 15px;
+  max-width: 400px; margin: auto;
+}
+#panel-section select, #panel-section input[type="file"], #panel-section button {
+  padding: 10px; border-radius: 8px; border: none;
+}
+#panel-section select, #panel-section input[type="file"] { background: #222; color: #fff; }
+#panel-section button {
+  background: #0040ff; color: #fff; font-weight: bold; cursor: pointer; transition: 0.3s;
+}
+#panel-section button:hover { background: #0040ff; }
+#lista-trabajos li {
+  background: #222; padding: 10px; margin: 5px 0;
+  border-radius: 6px; display: flex; justify-content: space-between;
+}
+#lista-trabajos button {
+  background: red; border: none; padding: 5px 10px;
+  border-radius: 6px; color: #fff; cursor: pointer;
+}
+=======
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid blue;
+  z-index: 1000;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header .titulo-header {
+  flex: 1;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+/* VIDEO DE PRESENTACIÓN */
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.video-overlay h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.3);
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+/* PROYECTOS */
+#proyectos {
+  padding: 100px 20px;
+  text-align: center;
+  background: #000;
+}
+
+#proyectos h2 {
+  color: blue;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+/* Grid de semanas */
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+.semana {
+  background: #111;
+  padding: 25px;
+  border-radius: 12px;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  border: 1px solid blue;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.semana:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 0, 255, 0.8);
+}
+
+.semana h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.semana button {
+  padding: 8px 15px;
+  border: none;
+  background: blue;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.semana button:hover {
+  background: darkblue;
+}
+
+/* SECCIÓN TRABAJOS */
+.trabajos-section {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.trabajos-section h2 {
+  font-size: 2rem;
+  color: blue;
+  margin-bottom: 40px;
+}
+
+/* Contenedor central */
+.contenedor-trabajos {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Acordeón */
+.acordeon-btn {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s;
+  border-bottom: 1px solid blue;
+}
+
+.acordeon-btn:hover {
+  background: blue;
+}
+
+/* Contenido oculto por defecto */
+.acordeon-contenido {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: #222;
+  padding: 0 20px;
+}
+
+.acordeon-contenido img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 20px 0 10px;
+}
+
+.acordeon-contenido p {
+  margin-bottom: 15px;
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.descargar-btn {
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.descargar-btn:hover {
+  background: darkblue;
+}
+
+/* LOGIN */
+.login-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  padding-top: 100px; /* deja espacio por el header fijo */
+}
+
+.login-container {
+  background: #111;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 255, 0.6);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-container h2 {
+  color: blue;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  border: 2px solid blue;
+  background: #1a1a1a;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: blue;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: darkblue;
+}
+
+.login-extra {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.login-extra a {
+  color: blue;
+  text-decoration: none;
+}
+
+.login-extra a:hover {
+  text-decoration: underline;
+}
+>>>>>>> ffcc07884ca739c4b686e1a00f020ff136555887
