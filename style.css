@@ -271,7 +271,7 @@ body {
 }
 
 .btn-github:hover {
-    background-color: #0040ff;
+    background-color: 0px 0px 0px 2px#0d1117;
     color: #ffffff;
     transform: translateX(5px);
     box-shadow: 0 4px 15px rgba(0, 64, 255, 0.3);
